@@ -1,0 +1,91 @@
+
+1.0,ExoPlanet,Project ExoPlanet,High,In Progress,Top-level project planning
+1.1,ExoPlanet,Global Systems,High,Planned,GameManager, shared logic, cross-scene state
+1.2,ExoPlanet,UI,High,In Progress,UI overlays, panels, HUD, info display
+1.3,ExoPlanet,Galaxy,High,In Progress,Galaxy-wide features and tasks
+1.3.1,ExoPlanet,Generate N procedural stars,High,Complete,Currently generating 50+ stars
+1.3.2,ExoPlanet,Assign unique names/IDs to stars,High,Complete,Used A–Z+index or UUID
+1.3.3,ExoPlanet,Make stars clickable to load star system,High,Complete,Uses OnMouseDown()
+1.3.4,ExoPlanet,Track current star name in GameManager,Medium,Complete,Stored in singleton
+1.3.5,ExoPlanet,Visual feedback when star is hovered,Low,Planned,Highlight or glow effect
+1.3.6,ExoPlanet,Anchor stars within a fixed screen space,Medium,Planned,Prevent overlap or offscreen placement
+1.3.7,ExoPlanet,Add zoom + pan support to camera,Medium,Planned,User-friendly galaxy exploration
+1.3.8,ExoPlanet,Add background galaxy texture,Low,Planned,Starfield or nebula visual layer
+1.3.9,ExoPlanet,Add star type variation (color, size),Medium,Planned,Visual flair and gameplay potential
+1.3.10,ExoPlanet,Enable filtering/highlighting by traits,Low,Stretch,Future filtering by colonized/resource-rich etc.
+1.4,ExoPlanet,Solar System,High,In Progress,Initial solar system setup
+1.4.1,ExoPlanet,Create StarSystem scene and setup template,High,Complete,Includes camera, lighting, and default layout
+1.4.2,ExoPlanet,Spawn center star in StarSystem scene,High,Complete,Star prefab placed at scene origin
+1.4.3,ExoPlanet,Generate and name planets in orbit,High,Complete,Planets A–D placed in circular pattern
+1.4.4,ExoPlanet,Click planet to show info panel,High,In Progress,Uses PlanetInfo.cs and PlanetInfoPanel.cs
+1.4.5,ExoPlanet,Track colonization time and toggle state,Medium,Complete,Planets can be colonized and de-colonized
+1.4.6,ExoPlanet,Visual indicator for colonized planets,Medium,Complete,Changes planet color on colonization
+1.4.7,ExoPlanet,Link planet to resource generation manager,High,Complete,SystemResourceManager.cs handles totals
+1.4.8,ExoPlanet,Display planet info panel in UI,High,In Progress,PlanetInfoManager UI shows selected planet data
+1.4.9,ExoPlanet,Create button to close/hide planet panel,Medium,Planned,Optional button to collapse panel
+1.4.10,ExoPlanet,Add random traits or bonuses to each planet,Medium,Planned,Used to encourage colonization decisions
+1.5,ExoPlanet,Planet Systems,High,Planned,Colonization, traits, structures, resource output
+1.5.1,ExoPlanet,Define base PlanetInfo data model,High,Complete,Includes name, resource rates, colonized status
+1.5.2,ExoPlanet,Track colonization status and color change,High,Complete,Turns planet green on colonize, white on de-colonize
+1.5.3,ExoPlanet,Add planet colonization cost and refund logic,Medium,Complete,Colonizing requires energy, refunded if reversed
+1.5.4,ExoPlanet,Track and update colonization timer,Medium,Complete,Timer shown in info panel
+1.5.5,ExoPlanet,Connect planets to SystemResourceManager,High,Complete,Colonized planets produce resources every tick
+1.5.6,ExoPlanet,Enable click to generate planet resource log,Medium,Complete,Logs production to console on click
+1.5.7,ExoPlanet,Add random traits and bonuses to planet data,Medium,Planned,Traits influence colonization decision
+1.5.8,ExoPlanet,Design placeholder for structure build slots,Medium,Planned,Each planet can host 1–3 structures
+1.5.9,ExoPlanet,Create PlanetInfoPanel.cs display format,High,In Progress,Panel displays name, resources, time colonized
+1.5.10,ExoPlanet,Add hover or selection highlight for planet,Low,Planned,Visual indication when targeting a planet
+1.6,ExoPlanet,Resource & Economy,High,Planned,Game-wide resource tracking, production, costs
+1.6.1,ExoPlanet,Define resource types (food, materials, energy),High,Complete,Used in PlanetInfo.cs and SystemResourceManager
+1.6.2,ExoPlanet,Track total resources across colonized planets,High,Complete,SystemResourceManager updates totals on tick
+1.6.3,ExoPlanet,Display resource totals in UI,High,Complete,Linked to TextMeshPro in StarSystem scene
+1.6.4,ExoPlanet,Set tick interval for resource collection,Medium,Complete,Currently every 3 seconds
+1.6.5,ExoPlanet,Allow toggle of colonization to affect output,Medium,Complete,Colonized flag controls inclusion in tick
+1.6.6,ExoPlanet,Create resource cost system for actions,High,Planned,Used for colonization, structures, or shipbuilding
+1.6.7,ExoPlanet,Log resource generation per planet for debug,Low,Complete,Output to console on click
+1.6.8,ExoPlanet,Design basic resource report panel,Medium,Planned,Popup or panel to summarize production per system
+1.6.9,ExoPlanet,Implement resource limits or caps,Medium,Planned,Optional max values for balance and challenge
+1.6.10,ExoPlanet,Prepare for multi-system resource tracking,Medium,Planned,Enable future expansion of economy across systems
+1.7,ExoPlanet,Travel & Combat,High,Planned,Ship movement, gravity drive, basic combat
+1.7.1,ExoPlanet,Define ship data model (name, type, speed),High,Planned,Used to represent player and AI vessels
+1.7.2,ExoPlanet,Implement basic ship prefab with visual icon,Medium,Planned,Simple sprite to represent ships in scene
+1.7.3,ExoPlanet,Enable ship spawn in StarSystem scene,High,Planned,For testing gravity drive and movement
+1.7.4,ExoPlanet,Design gravity drive travel mechanic,High,Planned,Ship enters system at star edge
+1.7.5,ExoPlanet,Allow player to assign ship to destination star,High,Planned,Uses Galaxy Map to set target
+1.7.6,ExoPlanet,Handle scene transfer for ship arrival,Medium,Planned,Trigger when ship reaches target star
+1.7.7,ExoPlanet,Create enemy ship prefab and spawn logic,High,Planned,First phase of hive threat simulation
+1.7.8,ExoPlanet,Implement simple combat collision logic,Medium,Planned,Prototype for ship-to-ship interaction
+1.7.9,ExoPlanet,Add health and damage stats to ships,Medium,Planned,Foundation for tactical combat
+1.7.10,ExoPlanet,Log travel and combat outcomes,Low,Planned,Used for debugging and future UI stats
+1.8,ExoPlanet,Save & Load,Medium,Planned,Game state management and persistence
+1.9,ExoPlanet,Optimization & Mobile,Medium,Planned,Performance tuning and mobile UI
+1.10,ExoPlanet,Narrative & Lore Integration,Medium,Planned,Progenitor story arc, hive threat
+1.11,ExoPlanet,EP1 Polishing & Tutorials,Medium,Planned,Polish, feedback loops, and onboarding
+
+Seq,Project,Task,Priority,Status,Notes
+2.1,GeorgeAI1.0,Add weekly reminders system to SOD,High,Complete,Implemented in helper.py and sod_generator.py
+2.2,GeorgeAI1.0,Fix greeting to be time-aware,Medium,Pending,Currently always says 'Good morning'
+2.3,GeorgeAI1.0,Disable clear screen during debug,Low,Pending,Allows testing visibility
+2.4,GeorgeAI1.0,Integrate mental clarity module into SOD,High,In Progress,Rotating clarity/mood check daily
+2.5,GeorgeAI1.0,Sync Garmin CSV weekly and correlate with mood,High,In Progress,First snapshot completed
+2.6,GeorgeAI1.0,Integrate BeFocused CSV for productivity tracking,Medium,Planned,Weekly CSV ingestion planned
+
+
+3.1,Spanish AI,Log vocabulary from daily Duolingo videos,High,In Use,CSV logging via UA processing
+3.2,Spanish AI,Create Quizlet flashcards from vocab logs,Medium,Planned,Based on unified vocabulary
+
+4.1,Health,Upload Garmin data weekly,High,In Use,Manual screenshots and CSV available
+4.2,Health,Track clarity drops vs sleep/stress trends,High,In Progress,Comparison engine started
+
+5.1,Volunteering,Prepare OF-301a and intro letters,Mediun, Completed,NPS fall season application prep
+5.2,Volunteering,Submit Montezuma Well application,Medium,Completed,First target volunteer site
+
+2.0,GeorgeAI1.0,Project GeorgeAI v1.0,High,In Progress,Top-level coordination
+2.1,GeorgeAI1.0,UI Framework & Design,High,Planned,Tkinter, PyQt, or Web; UX layout planning
+2.2,GeorgeAI1.0,Core Data System,High,Planned,Task JSONs, SOD/EOD logs, file handling
+2.3,GeorgeAI1.0,Task Management UI,High,Planned,Display, add/edit/delete/check tasks
+2.4,GeorgeAI1.0,Reflection & Planning UI,High,Planned,Show SOD/EOD, allow journaling
+2.5,GeorgeAI1.0,GPT Integration,High,Planned,Ask/answer via OpenAI
+2.6,GeorgeAI1.0,Data Analysis & Trends,Medium,Planned,Pattern detection, clarity/mood summaries
+2.7,GeorgeAI1.0,Settings, Shortcuts, Automation,Medium,Planned,Preferences, reminders, keyboard shortcuts
+2.8,GeorgeAI1.0,Future Enhancements,Medium,Planned,Multi-user, sync, mobile, voice control
