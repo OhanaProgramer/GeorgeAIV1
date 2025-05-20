@@ -1,4 +1,4 @@
-
+Seq,Project,Task,Priority,Status,Notes
 1.0,ExoPlanet,Project ExoPlanet,High,In Progress,Top-level project planning
 1.1,ExoPlanet,Global Systems,High,Planned,GameManager, shared logic, cross-scene state
 1.2,ExoPlanet,UI,High,In Progress,UI overlays, panels, HUD, info display
@@ -61,31 +61,16 @@
 1.9,ExoPlanet,Optimization & Mobile,Medium,Planned,Performance tuning and mobile UI
 1.10,ExoPlanet,Narrative & Lore Integration,Medium,Planned,Progenitor story arc, hive threat
 1.11,ExoPlanet,EP1 Polishing & Tutorials,Medium,Planned,Polish, feedback loops, and onboarding
-
-Seq,Project,Task,Priority,Status,Notes
 2.1,GeorgeAI1.0,Add weekly reminders system to SOD,High,Complete,Implemented in helper.py and sod_generator.py
 2.2,GeorgeAI1.0,Fix greeting to be time-aware,Medium,Pending,Currently always says 'Good morning'
 2.3,GeorgeAI1.0,Disable clear screen during debug,Low,Pending,Allows testing visibility
 2.4,GeorgeAI1.0,Integrate mental clarity module into SOD,High,In Progress,Rotating clarity/mood check daily
 2.5,GeorgeAI1.0,Sync Garmin CSV weekly and correlate with mood,High,In Progress,First snapshot completed
 2.6,GeorgeAI1.0,Integrate BeFocused CSV for productivity tracking,Medium,Planned,Weekly CSV ingestion planned
-
-
 3.1,Spanish AI,Log vocabulary from daily Duolingo videos,High,In Use,CSV logging via UA processing
 3.2,Spanish AI,Create Quizlet flashcards from vocab logs,Medium,Planned,Based on unified vocabulary
-
 4.1,Health,Upload Garmin data weekly,High,In Use,Manual screenshots and CSV available
 4.2,Health,Track clarity drops vs sleep/stress trends,High,In Progress,Comparison engine started
-
 5.1,Volunteering,Prepare OF-301a and intro letters,Mediun, Completed,NPS fall season application prep
 5.2,Volunteering,Submit Montezuma Well application,Medium,Completed,First target volunteer site
 
-2.0,GeorgeAI1.0,Project GeorgeAI v1.0,High,In Progress,Top-level coordination
-2.1,GeorgeAI1.0,UI Framework & Design,High,Planned,Tkinter, PyQt, or Web; UX layout planning
-2.2,GeorgeAI1.0,Core Data System,High,Planned,Task JSONs, SOD/EOD logs, file handling
-2.3,GeorgeAI1.0,Task Management UI,High,Planned,Display, add/edit/delete/check tasks
-2.4,GeorgeAI1.0,Reflection & Planning UI,High,Planned,Show SOD/EOD, allow journaling
-2.5,GeorgeAI1.0,GPT Integration,High,Planned,Ask/answer via OpenAI
-2.6,GeorgeAI1.0,Data Analysis & Trends,Medium,Planned,Pattern detection, clarity/mood summaries
-2.7,GeorgeAI1.0,Settings, Shortcuts, Automation,Medium,Planned,Preferences, reminders, keyboard shortcuts
-2.8,GeorgeAI1.0,Future Enhancements,Medium,Planned,Multi-user, sync, mobile, voice control

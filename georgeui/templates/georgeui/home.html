@@ -4,7 +4,35 @@
   <title>GeorgeAIV1</title>
 </head>
 <body>
-  <h1>Welcome to GeorgeAIV1</h1>
-  <p>This is the start of your static dashboard UI.</p>
+  <h1>Welcome, {{ username }} 👋</h1>
+  <p>Today is {{ today }}</p>
+  <p>Focus: {{ focus }}</p>
+  <h2>📋 Master Task List</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Seq</th>
+        <th>Project</th>
+        <th>Task</th>
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for task in tasks %}
+        <tr>
+          <td>{{ task.Seq }}</td>
+          <td>{{ task.Project }}</td>
+          <td>{{ task.Task }}</td>
+          <td style="color: {% if task.Priority == 'High' %}red{% elif task.Priority == 'Medium' %}orange{% else %}green{% endif %};">
+            {{ task.Priority }}
+          </td>
+          <td>{{ task.Status }}</td>
+          <td>{{ task.Notes }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </body>
 </html>
